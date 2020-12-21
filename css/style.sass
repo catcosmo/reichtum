@@ -1,11 +1,15 @@
 // fonts
-@import url(http://fonts.googleapis.com/css?family=Anton|Roboto|Open+Sans|Oswald:wght@600&display=swap);
+// @import url(http://fonts.googleapis.com/css?family=Anton|Roboto|Open+Sans|Oswald:wght@600&display=swap);
+
+@font-face 
+    font-family: 'Fugaz One';
+    src: url(../ressources/font/Fugaz_One/FugazOne-Regular.ttf)
 
 $roboto: 'Roboto', sans-serif;
 $open-sans: 'Open Sans', sans-serif;
 $oswald: 'Oswald', sans-serif;
 $anton:  'Anton';
-$fugaz: 'Fugaz One', cursive;
+$fugaz: 'Fugaz One';
 
 $animate-slide-in: 8s linear 1s infinite alternate slidein;
 $animate-jump: 0.8s ease-in-out 1s infinite alternate jump;
@@ -49,6 +53,9 @@ $highlights: #F2F0D8;
 
 .dark-rust
     background: $rust-dark !important
+
+.bg-color
+    color: $bg-color !important
 
 body
     background: $bg-color
