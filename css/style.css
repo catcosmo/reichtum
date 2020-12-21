@@ -1,0 +1,251 @@
+@import url(http://fonts.googleapis.com/css?family=Anton|Roboto|Open+Sans|Oswald:wght@600&display=swap);
+@-webkit-keyframes slidein {
+  from {
+    -webkit-transform: translateX(-55vw);
+            transform: translateX(-55vw);
+  }
+  to {
+    -webkit-transform: translateX(50vw);
+            transform: translateX(50vw);
+  }
+}
+@keyframes slidein {
+  from {
+    -webkit-transform: translateX(-55vw);
+            transform: translateX(-55vw);
+  }
+  to {
+    -webkit-transform: translateX(50vw);
+            transform: translateX(50vw);
+  }
+}
+
+@-webkit-keyframes jump {
+  from {
+    -webkit-transform: translateY(-1vw);
+            transform: translateY(-1vw);
+  }
+  to {
+    -webkit-transform: translateY(1vw);
+            transform: translateY(1vw);
+  }
+}
+
+@keyframes jump {
+  from {
+    -webkit-transform: translateY(-1vw);
+            transform: translateY(-1vw);
+  }
+  to {
+    -webkit-transform: translateY(1vw);
+            transform: translateY(1vw);
+  }
+}
+
+@-webkit-keyframes icon-jump {
+  from {
+    -webkit-transform: translateY(-0.5vw);
+            transform: translateY(-0.5vw);
+  }
+  to {
+    -webkit-transform: translateY(0.5vw);
+            transform: translateY(0.5vw);
+  }
+}
+
+@keyframes icon-jump {
+  from {
+    -webkit-transform: translateY(-0.5vw);
+            transform: translateY(-0.5vw);
+  }
+  to {
+    -webkit-transform: translateY(0.5vw);
+            transform: translateY(0.5vw);
+  }
+}
+
+.dark-rust {
+  background: #A6382E !important;
+}
+
+body {
+  background: #222C40;
+}
+
+header {
+  top: 0px;
+  position: fixed;
+  width: 100%;
+}
+
+#scroll-indicator {
+  font-weight: bold;
+  font-family: "Fugaz One", cursive !important;
+  color: #A6382E !important;
+}
+
+p a {
+  font-weight: bold;
+  color: #A6382E;
+  text-decoration: none;
+}
+
+.cap-font {
+  color: #697C8C;
+  font-family: 'Fugaz One', cursive;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+#scrolly {
+  position: relative;
+}
+
+article {
+  position: relative;
+  padding: 0 1rem;
+  margin: 0 auto;
+  width: 50vw;
+}
+
+p {
+  color: #697C8C;
+  font-family: 'Fugaz One', cursive;
+  text-transform: uppercase;
+}
+
+.text-block {
+  text-align: center;
+}
+
+.font-big {
+  font-size: 1.5em;
+}
+
+.step {
+  margin-top: 50% !important;
+  opacity: 0;
+  text-align: center;
+}
+
+.step-wrapper {
+  margin-top: 50% !important;
+  position: relative;
+}
+
+.point {
+  background: #C7D1D9;
+  height: 60px;
+  width: 60px;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+.scroll-icon {
+  -webkit-animation: 0.8s ease-in-out 1s infinite alternate icon-jump;
+          animation: 0.8s ease-in-out 1s infinite alternate icon-jump;
+}
+
+.zehntausend {
+  height: 0.1vw;
+  width: 0.1vw;
+  background: #697C8C;
+  text-align: center;
+  display: inline-block;
+}
+
+.arrow-down {
+  fill: #A6382E;
+  text-align: center;
+  display: inline-block;
+  min-width: 50px !important;
+}
+
+.jump {
+  -webkit-animation: 0.8s ease-in-out 1s infinite alternate jump;
+          animation: 0.8s ease-in-out 1s infinite alternate jump;
+  padding-bottom: 0.5vw;
+}
+
+.hundert-tausend {
+  height: 1vw;
+  width: 1vw;
+  background: #2F3D59;
+  text-align: center;
+  display: inline-block;
+}
+
+.millionen {
+  width: 6.52vw;
+  height: 2vw;
+  background: #2F3D59;
+  padding-top: 1%;
+  text-align: center;
+  display: inline-block;
+  margin-top: 0 !important;
+}
+
+#milliarden {
+  width: 50vw;
+  height: 8300vw;
+  background: #2F3D59;
+  padding-top: 1%;
+}
+
+#wohnung-berlin {
+  width: 4vw;
+  height: 1vw;
+  background: #A6382E;
+  margin: 0 auto;
+}
+
+.lidl-hundert {
+  width: 4.72vw;
+  height: 5vw;
+  display: inline-block;
+}
+
+.lidl-logo {
+  width: 100%;
+}
+
+.humboldt-forum {
+  width: 46vw;
+  height: 147vw;
+  display: inline-block;
+}
+
+.humboldt-forum-png {
+  width: 100%;
+}
+
+.kuchen {
+  width: 100%;
+}
+
+.mett {
+  margin-top: 3vw;
+  width: 40vw;
+}
+
+.mett-text {
+  margin-top: 2vw;
+}
+
+.merz {
+  left: -100px;
+  -webkit-animation: 8s linear 1s infinite alternate slidein;
+          animation: 8s linear 1s infinite alternate slidein;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1000;
+}
+
+.merz-container {
+  position: relative;
+  height: 1000px;
+}
+/*# sourceMappingURL=style.css.map */

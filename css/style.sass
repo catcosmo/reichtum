@@ -1,0 +1,202 @@
+// fonts
+@import url(http://fonts.googleapis.com/css?family=Anton|Roboto|Open+Sans|Oswald:wght@600&display=swap);
+
+$roboto: 'Roboto', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
+$oswald: 'Oswald', sans-serif;
+$anton:  'Anton';
+$fugaz: 'Fugaz One', cursive;
+
+$animate-slide-in: 8s linear 1s infinite alternate slidein;
+$animate-jump: 0.8s ease-in-out 1s infinite alternate jump;
+$animate-icon-jump: 0.8s ease-in-out 1s infinite alternate icon-jump;
+
+$scale-unit: 1vw
+
+@keyframes slidein 
+  from
+    transform: translateX(-55vw);
+  to
+    transform: translateX(50vw);
+
+@keyframes jump 
+  from
+    transform: translateY(-1vw);
+  to
+    transform: translateY(1vw);
+
+@keyframes icon-jump 
+  from
+    transform: translateY(-0.5vw);
+  to
+    transform: translateY(0.5vw);
+
+
+// colors
+// adobe theme retro
+// $bg-color: #253259;
+// $header: #F2D49B;
+// $text: #F2D4AE;
+// $rust-bright: #BF533B;
+$rust-dark: #A6382E;
+
+// adobe theme wealth
+$wealth-container: #2F3D59;
+$bg-color: #222C40;
+$header: #697C8C;
+$text: #C7D1D9;
+$highlights: #F2F0D8;
+
+.dark-rust
+    background: $rust-dark !important
+
+body
+    background: $bg-color
+
+header
+    top: 0px
+    position: fixed
+    width: 100%
+
+#scroll-indicator
+    font-weight: bold
+    font-family: $fugaz !important
+    color: $rust-dark !important
+
+p a
+    font-weight: bold;
+    color: $rust-dark;
+    text-decoration: none;
+
+.cap-font
+    color: $header
+    font-family: 'Fugaz One', cursive;
+    text-transform: uppercase;
+    text-align: center
+    margin-left:  2vw
+    margin-right: 2vw
+
+#scrolly 
+    position: relative;
+
+article 
+    position: relative;
+    padding: 0 1rem;
+    margin: 0 auto;
+    width: $scale-unit*50;
+
+p
+    color: $header
+    font-family: 'Fugaz One', cursive;
+    text-transform: uppercase;
+
+.text-block
+    text-align: center
+
+.font-big
+    font-size: 1.5em
+
+.step
+    margin-top: 50% !important
+    opacity: 0
+    text-align: center
+
+.step-wrapper
+    margin-top: 50% !important
+    position: relative
+
+.point
+    background: $text
+    height: 60px
+    width: 60px
+    margin: 0 auto
+    border-radius: 30px
+
+.scroll-icon
+    animation: $animate-icon-jump
+
+.zehntausend
+    height: $scale-unit/10
+    width: $scale-unit/10
+    background: $header
+    text-align: center
+    display: inline-block
+
+.arrow-down
+    fill: #A6382E
+    text-align: center
+    display: inline-block
+    min-width: 50px !important
+
+.jump
+    animation: $animate-jump
+    padding-bottom: 0.5vw
+
+
+.hundert-tausend
+    height: $scale-unit
+    width: $scale-unit
+    background: $wealth-container
+    text-align: center
+    display: inline-block
+
+.millionen
+    width: $scale-unit*6.52
+    height: 2*$scale-unit
+    background: $wealth-container
+    padding-top: 1%
+    text-align: center
+    display: inline-block
+    margin-top: 0 !important
+    
+
+#milliarden
+    width: $scale-unit*50
+    height: 8300*$scale-unit
+    background: $wealth-container
+    padding-top: 1%
+
+#wohnung-berlin
+    width: 4*$scale-unit
+    height: 1*$scale-unit
+    background: $rust-dark
+    margin: 0 auto
+
+.lidl-hundert
+    width: $scale-unit*4.72
+    height: $scale-unit*5
+    display: inline-block
+
+.lidl-logo
+    width: 100%
+
+.humboldt-forum
+    width: $scale-unit*46
+    height: $scale-unit*147
+    display: inline-block
+
+.humboldt-forum-png
+    width: 100%
+
+
+
+.kuchen
+    width: 100%
+
+.mett
+    margin-top: 3vw
+    width: 40vw
+
+.mett-text
+    margin-top: 2vw
+
+.merz
+    left: -100px
+    animation: $animate-slide-in
+    top: 0
+    position: sticky
+    z-index: 1000
+
+.merz-container
+    position: relative
+    height: 1000px
