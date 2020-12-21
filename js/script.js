@@ -85,10 +85,10 @@ scroller.setup({
     step: '.step',
     progress: true,
     // debugger shows the trigger line for when elements are reached
-    debug: true,
+    //debug: true,
     // offset - where in the screen does the element appear/change
     // 0 is top of screen, 1 bottom
-    offset: 0.67
+    offset: 0.80
 }).onStepEnter(handleStepEnter).onStepExit(handleStepExit).onStepProgress(handleStepProgress);
 
 // define element that scroller is watching

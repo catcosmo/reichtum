@@ -119,6 +119,12 @@ article {
   width: 50vw;
 }
 
+.ruler {
+  background-image: url("img/ruler.svg");
+  background-repeat: repeat-y;
+  z-index: 500;
+}
+
 p {
   color: #697C8C;
   font-family: 'Fugaz One', cursive;
@@ -255,6 +261,14 @@ p {
 
 .merz-container {
   position: relative;
-  height: 1000px;
+  height: 350vw;
+}
+
+.zwanzigtausend {
+  width: 0.228vw;
+  height: 0.1vw;
+  background: #A6382E;
+  margin: 0 auto;
+  margin-top: 1vw;
 }
 /*# sourceMappingURL=style.css.map */
